@@ -7,8 +7,6 @@ const results = document.querySelector('.results');
 const filterRegion = document.querySelector('.filter');
 const regionDOM = document.getElementById('region');
 
-// State variables
-
 // Function to format numbers
 const numberFormatter = number => new Intl.NumberFormat('en-US').format(number);
 
