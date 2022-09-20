@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.header {
+  background-color: hsl(209, 23%, 22%);
+  padding: 2rem 4rem;
+}
+
+.header-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem;
+}
+
+.form-label {
+  position: relative;
+}
+
+.form-input {
+  background-color: hsl(209, 23%, 22%);
+  color: #fff;
+  border: none;
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-icon {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+}
+
+.results {
+  max-width: 100rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10rem, 1fr));
+  row-gap: 4rem;
+  column-gap: 2rem;
+}
+
+.card {
+  background-color: hsl(209, 23%, 22%);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-shadow: 0 0 2rem hsl(207, 26%, 17%);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+.card-img {
+  width: 100%;
+  height: 20rem;
+  display: inline-block;
+  border-bottom: 0.3rem solid hsl(0, 0%, 100%);
+}
+
+.card-details {
+  padding: 2rem;
+}
+
+.card-name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-details p {
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+}
+
+.card-details p:last-child {
+  margin-bottom: 0;
+}
+
+.card-details p span {
+  font-weight: 600;
+}
