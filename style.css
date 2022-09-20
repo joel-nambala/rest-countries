@@ -37,15 +37,25 @@ body {
 }
 
 .form-input {
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
+}
+
+.filter select {
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+}
+
+.form-input,
+.filter select {
   background-color: hsl(209, 23%, 22%);
   color: #fff;
   border: none;
-  padding: 2rem 4rem;
-  font-size: 1.6rem;
   font-family: inherit;
 }
 
-.form-input:focus {
+.form-input:focus,
+.filter select {
   outline: none;
 }
 
@@ -64,8 +74,8 @@ body {
 
   display: grid;
   grid-template-columns: repeat(3, minmax(10rem, 1fr));
-  row-gap: 4rem;
-  column-gap: 2rem;
+  row-gap: 5rem;
+  column-gap: 3rem;
 }
 
 .card {
